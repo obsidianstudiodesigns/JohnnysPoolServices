@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /logos.html
+Disallow: /tools/
+
+Sitemap: https://obsidianstudiodesigns.github.io/JohnnysPoolServices/sitemap.xml
