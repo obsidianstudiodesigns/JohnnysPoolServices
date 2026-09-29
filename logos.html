@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logo Options | Johnny's Pool Services</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet">
+  <style>
+    :root { --abyss:#04303f; --mosaic:#16a9c2; --mosaic-deep:#0b7f98; --glint:#bff4f7; --coping:#e9ecea; --ink:#062530; --ink-soft:#35535c; --white:#f7fcfc; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Bricolage Grotesque', 'Segoe UI', sans-serif; color: var(--ink); background: var(--coping); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; }
+    :focus-visible { outline: 3px solid var(--mosaic); outline-offset: 3px; border-radius: 6px; }
+    header { background: var(--abyss); color: var(--white); padding: clamp(3rem, 8vh, 5rem) clamp(1rem, 4vw, 3.5rem) clamp(2.5rem, 6vh, 4rem); }
+    header a { font-size: .95rem; color: var(--glint); }
+    h1 { margin: 1.5rem 0 0; font-size: clamp(2.2rem, 1.4rem + 3.2vw, 4.2rem); line-height: 1; letter-spacing: -.035em; font-variation-settings: 'opsz' 96; }
+    header p { margin: 1rem 0 0; max-width: 38rem; color: rgba(247,252,252,.8); font-size: 1.1rem; }
+    main { padding: clamp(2rem, 5vh, 4rem) clamp(1rem, 4vw, 3.5rem) 5rem; display: grid; gap: clamp(2rem, 5vh, 3.5rem); }
+    .concept { background: var(--white); border-radius: 24px; padding: clamp(1.25rem, 3vw, 2.5rem); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: clamp(1.5rem, 4vw, 3rem); }
+    .concept h2 { margin: 0; font-size: clamp(1.6rem, 1.2rem + 1.4vw, 2.35rem); letter-spacing: -.03em; line-height: 1.05; color: var(--abyss); }
+    .concept .num { font-weight: 700; color: var(--mosaic-deep); font-size: 1rem; }
+    .concept p { margin: .8rem 0 0; color: var(--ink-soft); max-width: 26rem; }
+    .sizes { display: flex; align-items: flex-end; gap: 1.25rem; margin-top: 1.75rem; }
+    .sizes svg { flex: none; }
+    .downloads { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.75rem; }
+    .downloads button { font: 600 .9rem/1 inherit; font-family: inherit; min-height: 40px; padding: 0 .9rem; border-radius: 10px; border: 1.5px solid rgba(4,48,63,.25); background: transparent; color: var(--abyss); cursor: pointer; }
+    .downloads button:hover { border-color: var(--abyss); }
+    .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .panel { border-radius: 18px; display: grid; place-items: center; padding: clamp(1.5rem, 4vw, 3rem) 1.25rem; min-height: 200px; }
+    .panel.light { background: var(--coping); }
+    .panel.dark { background: var(--abyss); }
+    .panel svg { width: 100%; max-width: 360px; height: auto; }
+    .card-row { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .bizcard { aspect-ratio: 85 / 55; border-radius: 14px; padding: 7% 8%; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 20px 40px -24px rgba(4,48,63,.5); }
+    .bizcard.front { background: var(--abyss); justify-content: center; align-items: center; }
+    .bizcard.front svg { width: 72%; height: auto; }
+    .bizcard.back { background: var(--white); border: 1px solid #dde2e0; color: var(--ink); }
+    .bizcard.back strong { font-size: clamp(1rem, .8rem + .9vw, 1.35rem); letter-spacing: -.02em; }
+    .bizcard.back span { display: block; color: var(--ink-soft); font-size: clamp(.8rem, .7rem + .35vw, .95rem); }
+    .bizcard.back .mini { width: 16%; align-self: flex-end; }
+    .card-caption { grid-column: 1 / -1; margin: 0; font-size: .9rem; color: var(--ink-soft); }
+    @media (max-width: 900px) { .concept { grid-template-columns: 1fr; } }
+    @media (max-width: 560px) { .panels, .card-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">Back to the website</a>
+    <h1>Five logo directions</h1>
+    <p>Each one is shown on light and dark backgrounds, at small sizes, and on a business card. The website now uses Mosaic (option 2).</p>
+  </header>
+  <main id="concepts"></main>
+
+  <script type="module">
+    import { LOGOS, svgDoc } from './js/logos-data.js?v=3';
+    const root = document.getElementById('concepts');
+
+    const download = (name, svg) => {
+      const blob = new Blob([svg], { type: 'image/svg+xml' });
+      const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: name });
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    };
+
+    LOGOS.forEach((logo, i) => {
+      const el = document.createElement('section');
+      el.className = 'concept';
+      el.setAttribute('aria-labelledby', `h-${logo.id}`);
+      const sizes = [72, 40, 24].map((s) => svgDoc(logo.mark('light'), '0 0 120 120').replace('<svg ', `<svg width="${s}" height="${s}" `)).join('');
+      el.innerHTML = `
+        <div>
+          <span class="num">Option ${i + 1}</span>
+          <h2 id="h-${logo.id}">${logo.name}</h2>
+          <p>${logo.idea}</p>
+          <div class="sizes" aria-label="${logo.name} mark at 72, 40 and 24 pixels">${sizes}</div>
+          <div class="downloads">
+            <button data-kind="lockup-light">Download logo (light)</button>
+            <button data-kind="lockup-dark">Download logo (dark)</button>
+            <button data-kind="mark">Download icon</button>
+          </div>
+        </div>
+        <div class="panels">
+          <div class="panel light">${svgDoc(logo.lockup('light'), logo.lockupBox, { title: `${logo.name} logo on light` })}</div>
+          <div class="panel dark">${svgDoc(logo.lockup('dark'), logo.lockupBox, { title: `${logo.name} logo on dark` })}</div>
+          <div class="card-row">
+            <div class="bizcard front">${svgDoc(logo.lockup('dark'), logo.lockupBox, { title: '' })}</div>
+            <div class="bizcard back">
+              <div><strong>Johnny</strong><span>Johnny's Pool Services</span></div>
+              <div><span>061 765 8479</span><span>johnvdbergmsp@gmail.com</span><span>Gordon's Bay</span></div>
+              <div class="mini">${svgDoc(logo.mark('light'), '0 0 120 120', { title: '' })}</div>
+            </div>
+            <p class="card-caption">Business card, front and back</p>
+          </div>
+        </div>`;
+      el.querySelectorAll('button').forEach((b) => b.addEventListener('click', () => {
+        const k = b.dataset.kind;
+        if (k === 'mark') download(`johnnys-${logo.id}-icon.svg`, svgDoc(logo.mark('light'), '0 0 120 120', { standalone: true, title: logo.name }));
+        else {
+          const t = k.endsWith('dark') ? 'dark' : 'light';
+          download(`johnnys-${logo.id}-logo-${t}.svg`, svgDoc(logo.lockup(t), logo.lockupBox, { standalone: true, title: logo.name }));
+        }
+      }));
+      root.appendChild(el);
+    });
+  </script>
+</body>
+</html>

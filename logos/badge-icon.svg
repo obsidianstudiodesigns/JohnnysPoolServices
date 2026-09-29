@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Bay Badge"><style>@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;display=swap');</style>
+  <defs>
+    <path id="t16" d="M15 60 A45 45 0 0 1 105 60"/>
+    <path id="bt17" d="M9 60 A51 51 0 0 0 111 60"/>
+    <clipPath id="i18"><circle cx="60" cy="60" r="38"/></clipPath>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="#04303f"/>
+  <circle cx="60" cy="60" r="38" fill="#0b7f98"/>
+  <g clip-path="url(#i18)">
+    <rect x="0" y="0" width="120" height="66" fill="#0f93ad"/>
+    <circle cx="60" cy="54" r="13" fill="#bff4f7"/>
+    <path d="M20 68 L36 55 L44 60 L58 46 L70 57 L78 52 L100 68 Z" fill="#04303f"/>
+    <rect x="0" y="67" width="120" height="60" fill="#16a9c2"/>
+    <path d="M22 76 q6 -4 12 0 t12 0 t12 0 t12 0 t12 0 t12 0 M28 86 q6 -4 12 0 t12 0 t12 0 t12 0 t12 0" fill="none" stroke="#f7fcfc" stroke-width="2.2" stroke-linecap="round" opacity=".85"/>
+  </g>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="#f7fcfc" stroke-width="1.6"/>
+  <text font-family="'Bricolage Grotesque', 'Segoe UI', sans-serif" font-weight="700" font-size="10" letter-spacing="1.6" fill="#f7fcfc">
+    <textPath href="#t16" startOffset="50%" text-anchor="middle">JOHNNY'S POOL SERVICES</textPath>
+  </text>
+  <text font-family="'Bricolage Grotesque', 'Segoe UI', sans-serif" font-weight="600" font-size="9" letter-spacing="2.2" fill="#f7fcfc" opacity=".85">
+    <textPath href="#bt17" startOffset="50%" text-anchor="middle">GORDON'S BAY</textPath>
+  </text>
+  <circle cx="11.5" cy="60" r="2" fill="#16a9c2"/><circle cx="108.5" cy="60" r="2" fill="#16a9c2"/></svg>

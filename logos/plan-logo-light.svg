@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 120" role="img" aria-label="Pool Plan"><style>@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;display=swap');</style>
+  <g>
+  <defs>
+    <clipPath id="d12"><rect width="120" height="120" rx="24"/></clipPath>
+    <linearGradient id="w13" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5fd0df"/><stop offset="1" stop-color="#0b7f98"/></linearGradient>
+  </defs>
+  <g clip-path="url(#d12)">
+    <rect width="120" height="120" fill="#a4623b"/><line x1="0" y1="12" x2="120" y2="12" stroke="#000" stroke-opacity=".2" stroke-width="1.2"/><line x1="0" y1="22.5" x2="120" y2="22.5" stroke="#000" stroke-opacity=".2" stroke-width="1.2"/><line x1="0" y1="33" x2="120" y2="33" stroke="#000" stroke-opacity=".2" stroke-width="1.2"/><line x1="0" y1="43.5" x2="120" y2="43.5" stroke="#000" stroke-opacity=".2" stroke-width="1.2"/><line x1="0" y1="54" x2="120" y2="54" stroke="#000" stroke-opacity=".2" stroke-width="1.2"/><line x1="0" y1="64.5" x2="120" y2="64.5" stroke="#000" stroke-opacity=".2" stroke-width="1.2"/><line x1="0" y1="75" x2="120" y2="75" stroke="#000" stroke-opacity=".2" stroke-width="1.2"/><line x1="0" y1="85.5" x2="120" y2="85.5" stroke="#000" stroke-opacity=".2" stroke-width="1.2"/><line x1="0" y1="96" x2="120" y2="96" stroke="#000" stroke-opacity=".2" stroke-width="1.2"/><line x1="0" y1="106.5" x2="120" y2="106.5" stroke="#000" stroke-opacity=".2" stroke-width="1.2"/><line x1="0" y1="117" x2="120" y2="117" stroke="#000" stroke-opacity=".2" stroke-width="1.2"/>
+  </g>
+  <rect x="19" y="27" width="82" height="66" rx="7" fill="#e9ecea"/>
+  <rect x="26" y="34" width="68" height="52" rx="3" fill="url(#w13)"/>
+  <path d="M33 50 q6 -5 12 0 t12 0 M49 64 q6 -5 12 0 t12 0 M36 76 q5 -4 10 0 t10 0 M66 45 q5 -4 10 0 t10 0" fill="none" stroke="#fff" stroke-opacity=".6" stroke-width="2" stroke-linecap="round"/>
+  <path d="M79 22 v22 M87 22 v22 M79 29 h8 M79 37 h8" fill="none" stroke="#dfe6e9" stroke-width="3" stroke-linecap="round"/></g>
+  <text x="142" y="66" font-family="'Bricolage Grotesque', 'Segoe UI', sans-serif" font-weight="760" font-size="50" letter-spacing="-1" fill="#062530" textLength="222" lengthAdjust="spacingAndGlyphs">Johnny's</text>
+  <text x="144" y="99" font-family="'Bricolage Grotesque', 'Segoe UI', sans-serif" font-weight="500" font-size="22" fill="#0b7f98" textLength="152" lengthAdjust="spacingAndGlyphs">Pool Services</text></svg>

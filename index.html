@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Johnny's Pool Services | Gordon's Bay pool care, repairs and heating</title>
+  <meta name="description" content="Pool cleaning, pumps and filters, solar heating, LED lights, decking and repairs in Gordon's Bay. Call Johnny on 061 765 8479, any day of the week.">
+  <meta name="theme-color" content="#04303f">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Johnny's Pool Services, Gordon's Bay">
+  <meta property="og:description" content="Everything in and around your pool: cleaning, repairs, pumps, heating, lighting and decking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=4">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Johnny's Pool Services",
+      "description": "Swimming pool and hot tub service: cleaning, repairs, pumps and filters, heating, lighting and decking.",
+      "telephone": "+27 61 765 8479",
+      "email": "johnvdbergmsp@gmail.com",
+      "areaServed": "Gordon's Bay, Western Cape",
+      "address": { "@type": "PostalAddress", "addressLocality": "Gordon's Bay", "addressRegion": "Western Cape", "addressCountry": "ZA" },
+      "openingHours": "Mo-Su 00:00-23:59"
+    }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#services">Skip to services</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Johnny's Pool Services, back to top">
+      <span class="brand-mark" data-logo="mosaic"></span>
+      <span class="brand-name">Johnny's <span>Pool Services</span></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#work">Our work</a>
+      <a href="#process">How it works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-small btn-light" href="tel:+27617658479">Call 061 765 8479</a>
+  </header>
+
+  <main>
+    <!-- Hero: a live pool you can touch -->
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas class="hero-water" aria-hidden="true"></canvas>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <h1 id="hero-title" class="hero-title">
+          <span class="line"><span>Everything in</span></span>
+          <span class="line"><span>and around</span></span>
+          <span class="line"><span>your pool.</span></span>
+        </h1>
+        <p class="hero-lede">Cleaning, pumps, heating, lighting, decking and repairs in Gordon's Bay, sorted by Johnny from the first call to the last swim of summer.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="tel:+27617658479">Call 061 765 8479</a>
+          <a class="btn btn-ghost" href="https://wa.me/27617658479" target="_blank" rel="noopener">WhatsApp Johnny</a>
+        </div>
+      </div>
+      <p class="hero-hint" aria-hidden="true"><span class="hint-dot"></span>Run your cursor through the water</p>
+    </section>
+
+    <!-- Services with the 3D tour -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="services-head">
+        <h2 id="services-title">One call covers the whole pool.</h2>
+        <p>Scroll through the jobs Johnny does and the model follows along, from the water itself to the pump, the roof and the deck.</p>
+      </div>
+
+      <div class="tour">
+        <div class="stage" aria-hidden="true">
+          <div class="stage-canvas" id="pool-stage"></div>
+          <p class="stage-caption"><span id="stage-caption">The whole setup</span></p>
+        </div>
+
+        <div class="svc-list">
+          <article class="svc" data-shot="overview">
+            <h3>The whole pool, start to finish</h3>
+            <p>Most pool problems cross over. A green pool can be a pump problem, and a leak can be the heating. Because Johnny handles all of it, you make one call and deal with one person.</p>
+            <ul><li>Water, pump, filter and plumbing</li><li>Heating, lights and the deck around it</li></ul>
+          </article>
+
+          <article class="svc" data-shot="care">
+            <h3>Pool cleaning and water care</h3>
+            <p>Brushing, vacuuming, skimming and a proper water test, with the chemicals balanced so the water stays clear and gentle on skin and eyes. Book regular visits or a once-off clean.</p>
+            <ul><li>Regular or once-off visits</li><li>Water testing and balancing</li><li>Green pool turnarounds</li></ul>
+            <a class="svc-link" href="#contact" data-service="Pool cleaning and water care">Ask about pool cleaning</a>
+          </article>
+
+          <article class="svc" data-shot="pumps">
+            <h3>Pumps and filtration</h3>
+            <p>Pool pumps, sand filters and multiport valves supplied, fitted and repaired. If the pump hums, leaks or trips the power, Johnny tracks down why and fixes it.</p>
+            <ul><li>Pump repairs and replacements</li><li>Sand filters and media changes</li><li>Valves and plumbing</li></ul>
+            <a class="svc-link" href="#contact" data-service="Pumps and filtration">Ask about pumps and filters</a>
+          </article>
+
+          <article class="svc" data-shot="heating">
+            <h3>Pool heating</h3>
+            <p>Solar heating installed, extended and repaired, so the pool is warm enough to use from early spring to late autumn. Ask about heat pumps if you want to swim in winter too.</p>
+            <ul><li>Solar heating mats</li><li>Leak and pipe repairs on the roof</li><li>Heat pump options</li></ul>
+            <a class="svc-link" href="#contact" data-service="Pool heating">Ask about pool heating</a>
+          </article>
+
+          <article class="svc" data-shot="lighting">
+            <h3>Pool lighting</h3>
+            <p>LED pool lights fitted, or swapped in for old halogen units. They are brighter, cheaper to run and make the pool the best-looking part of the garden after dark.</p>
+            <ul><li>New LED lights</li><li>Halogen to LED upgrades</li><li>Colour-changing options</li></ul>
+            <a class="svc-link" href="#contact" data-service="Pool lighting">Ask about pool lights</a>
+          </article>
+
+          <article class="svc" data-shot="decking">
+            <h3>Decking and surrounds</h3>
+            <p>Timber decks, pump boxes and the finishing around the pool, built new or brought back with repairs, sanding and oiling.</p>
+            <ul><li>New timber decks</li><li>Sanding and oiling</li><li>Pump and equipment covers</li></ul>
+            <a class="svc-link" href="#contact" data-service="Decking and surrounds">Ask about decking</a>
+          </article>
+
+          <article class="svc" data-shot="repairs">
+            <h3>Repairs and renovations</h3>
+            <p>Leaks, cracked fittings, failing plumbing and tired pools given a second life. If something in or around the pool is broken, start here.</p>
+            <ul><li>Leak finding and repair</li><li>Fittings and plumbing</li><li>Pool renovations</li></ul>
+            <a class="svc-link" href="#contact" data-service="Repairs and renovations">Ask about a repair</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Real photos from Johnny's jobs -->
+    <section class="work" id="work" aria-labelledby="work-title">
+      <div class="work-head">
+        <h2 id="work-title">Our work</h2>
+        <p>Photos from Johnny's recent jobs: decks, pumps, heating and pools brought back to life.</p>
+      </div>
+      <div class="work-grid">
+          <figure class="work-item w-a1">
+            <button class="work-open" type="button" data-full="assets/work/balau-deck-plunge-pool-1600.jpg" aria-label="View larger: Balau deck and built-in bench around a plunge pool">
+              <img src="assets/work/balau-deck-plunge-pool-800.jpg" srcset="assets/work/balau-deck-plunge-pool-800.jpg 800w, assets/work/balau-deck-plunge-pool-1600.jpg 1600w" sizes="(max-width: 700px) 100vw, 60vw" alt="A plunge pool set into a new reddish-brown balau timber deck, with a built-in timber bench and a frameless glass fence." width="2048" height="1536" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="work-title">Balau deck and built-in bench around a plunge pool</span><span class="work-tag">Decking and surrounds</span></figcaption>
+          </figure>
+          <figure class="work-item w-a2">
+            <button class="work-open" type="button" data-full="assets/work/sand-filter-pump-install-1600.jpg" aria-label="View larger: New sand filter, multiport valve and pump, plumbed in">
+              <img src="assets/work/sand-filter-pump-install-800.jpg" srcset="assets/work/sand-filter-pump-install-800.jpg 800w, assets/work/sand-filter-pump-install-1600.jpg 1600w" sizes="(max-width: 700px) 100vw, 60vw" alt="A grey sand filter with a black multiport valve and pool pump, connected with white PVC pipework on a paved pad." width="1536" height="2048" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="work-title">New sand filter, multiport valve and pump, plumbed in</span><span class="work-tag">Pumps and filtration</span></figcaption>
+          </figure>
+          <figure class="work-item w-b1">
+            <button class="work-open" type="button" data-full="assets/work/solar-heating-roof-1600.jpg" aria-label="View larger: Solar heating mats on the roof">
+              <img src="assets/work/solar-heating-roof-800.jpg" srcset="assets/work/solar-heating-roof-800.jpg 800w, assets/work/solar-heating-roof-1600.jpg 1600w" sizes="(max-width: 700px) 100vw, 60vw" alt="Black solar pool-heating mats laid across a roof under a clear blue sky." width="1200" height="1600" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="work-title">Solar heating mats on the roof</span><span class="work-tag">Pool heating</span></figcaption>
+          </figure>
+          <figure class="work-item w-b2">
+            <button class="work-open" type="button" data-full="assets/work/pool-resurfacing-1600.jpg" aria-label="View larger: Resurfacing a pool and fitting a new skimmer">
+              <img src="assets/work/pool-resurfacing-800.jpg" srcset="assets/work/pool-resurfacing-800.jpg 800w, assets/work/pool-resurfacing-1600.jpg 1600w" sizes="(max-width: 700px) 100vw, 60vw" alt="Three workers resurfacing an empty pool in pale blue, with a new skimmer box being fitted at the edge." width="2048" height="1206" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="work-title">Resurfacing a pool and fitting a new skimmer</span><span class="work-tag">Repairs and renovations</span></figcaption>
+          </figure>
+          <figure class="work-item w-c1">
+            <button class="work-open" type="button" data-full="assets/work/resurfaced-pool-mosaic-1600.jpg" aria-label="View larger: Resurfaced pool with a new mosaic waterline">
+              <img src="assets/work/resurfaced-pool-mosaic-800.jpg" srcset="assets/work/resurfaced-pool-mosaic-800.jpg 800w, assets/work/resurfaced-pool-mosaic-1600.jpg 1600w" sizes="(max-width: 700px) 100vw, 60vw" alt="An empty kidney-shaped pool, freshly resurfaced in blue, with a band of dark blue mosaic tiles at the waterline and a brick coping." width="1020" height="765" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="work-title">Resurfaced pool with a new mosaic waterline</span><span class="work-tag">Repairs and renovations</span></figcaption>
+          </figure>
+          <figure class="work-item w-c2">
+            <button class="work-open" type="button" data-full="assets/work/new-pool-coping-1600.jpg" aria-label="View larger: Pool finished with new coping, set into the lawn">
+              <img src="assets/work/new-pool-coping-800.jpg" srcset="assets/work/new-pool-coping-800.jpg 640w" sizes="(max-width: 700px) 100vw, 60vw" alt="A rectangular pool with pale stone coping, set into a green lawn with mountains behind." width="640" height="480" loading="lazy" decoding="async">
+            </button>
+            <figcaption><span class="work-title">Pool finished with new coping, set into the lawn</span><span class="work-tag">Surrounds</span></figcaption>
+          </figure>
+      </div>
+    </section>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+      <img class="lightbox-img" alt="">
+      <p class="lightbox-caption"></p>
+      <div class="lightbox-controls">
+        <button class="lb-btn" type="button" data-step="-1" aria-label="Previous photo">Previous</button>
+        <button class="lb-btn" type="button" data-step="1" aria-label="Next photo">Next</button>
+        <button class="lb-btn lb-close" type="button" aria-label="Close photo viewer" autofocus>Close</button>
+      </div>
+    </dialog>
+
+    <!-- A real sequence, so it is numbered -->
+    <section class="process" id="process" aria-labelledby="process-title">
+      <h2 id="process-title">How a job works</h2>
+      <ol class="steps">
+        <li>
+          <h3>Get in touch</h3>
+          <p>Call, WhatsApp or email. A photo of the pool or the equipment helps Johnny come prepared.</p>
+        </li>
+        <li>
+          <h3>Site visit</h3>
+          <p>Johnny looks at the pool and equipment in person and explains what needs doing, in plain language.</p>
+        </li>
+        <li>
+          <h3>Clear quote</h3>
+          <p>You get the price before any work starts, so there are no surprises.</p>
+        </li>
+        <li>
+          <h3>Job done</h3>
+          <p>The work gets finished and the pool is ready to swim in. Regular care visits are there if you want them.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="local" aria-labelledby="local-title">
+      <div class="local-inner">
+        <h2 id="local-title">Local to Gordon's Bay. Open every day.</h2>
+        <p>Johnny works on pools across Gordon's Bay and the surrounding area. Pools don't keep office hours, so neither does he. Call any day of the week.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-direct">
+        <h2 id="contact-title">Talk to Johnny</h2>
+        <a class="big-phone" href="tel:+27617658479">061 765 8479</a>
+        <ul class="contact-list">
+          <li><a href="https://wa.me/27617658479" target="_blank" rel="noopener">WhatsApp 061 765 8479</a></li>
+          <li><a href="mailto:johnvdbergmsp@gmail.com">johnvdbergmsp@gmail.com</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100057237708937" target="_blank" rel="noopener">Johnny's Pools Services on Facebook</a></li>
+        </ul>
+        <p class="contact-note">Gordon's Bay, Western Cape. Open every day.</p>
+      </div>
+
+      <form class="quote-form" id="quote-form" novalidate>
+        <h3>Ask for a quote</h3>
+        <p class="form-intro">Fill this in and it opens a ready-written message to Johnny on WhatsApp or email.</p>
+        <div class="field">
+          <label for="f-name">Your name</label>
+          <input id="f-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="f-phone">Phone number</label>
+            <input id="f-phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+          <div class="field">
+            <label for="f-area">Suburb</label>
+            <input id="f-area" name="area" autocomplete="address-level2" placeholder="e.g. Gordon's Bay">
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-service">What do you need?</label>
+          <select id="f-service" name="service">
+            <option>Pool cleaning and water care</option>
+            <option>Pumps and filtration</option>
+            <option>Pool heating</option>
+            <option>Pool lighting</option>
+            <option>Decking and surrounds</option>
+            <option>Repairs and renovations</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-msg">Tell Johnny about the pool</label>
+          <textarea id="f-msg" name="message" rows="4" required placeholder="Size of the pool, what's wrong, when suits you"></textarea>
+        </div>
+        <p class="form-error" id="form-error" role="alert" hidden></p>
+        <div class="form-actions">
+          <button class="btn btn-dark" type="submit" value="whatsapp">Send on WhatsApp</button>
+          <button class="btn btn-outline" type="submit" value="email">Send by email</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <span class="brand-mark" data-logo="mosaic"></span>
+      <p>Johnny's Pool Services<br>Gordon's Bay, Western Cape</p>
+    </div>
+    <p class="footer-links">
+      <a href="tel:+27617658479">061 765 8479</a>
+      <a href="mailto:johnvdbergmsp@gmail.com">johnvdbergmsp@gmail.com</a>
+      <a href="logos.html">Logo options</a>
+    </p>
+    <p class="footer-legal">© <span id="year">2026</span> Johnny's Pool Services</p>
+  </footer>
+
+  <script type="module" src="js/main.js?v=25"></script>
+</body>
+</html>

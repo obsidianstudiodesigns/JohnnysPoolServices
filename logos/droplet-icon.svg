@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Droplet"><style>@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;display=swap');</style>
+  <defs><linearGradient id="g25" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4cc4d6"/><stop offset="1" stop-color="#0b7f98"/></linearGradient></defs>
+  <path d="M60 8 C60 8 22 52 22 78 A38 38 0 0 0 98 78 C98 52 60 8 60 8 Z" fill="url(#g25)"/>
+  <path d="M40 78 A20 20 0 0 0 56 97" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="5" stroke-linecap="round"/>
+  <path d="M66 40 V76 A11 11 0 0 1 46 80" fill="none" stroke="#04303f" stroke-width="9" stroke-linecap="round"/></svg>

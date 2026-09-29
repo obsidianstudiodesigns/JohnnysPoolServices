@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 120" role="img" aria-label="Refraction"><style>@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&amp;display=swap');</style>
+  <g>
+  <defs>
+    <clipPath id="c4"><circle cx="60" cy="60" r="56"/></clipPath>
+    <clipPath id="a5"><path d="M0 66 C10 60 20 60 30 66 S50 72 60 66 S80 60 90 66 S110 72 120 66 V0 H0 Z"/></clipPath>
+    <clipPath id="b6"><path d="M0 66 C10 60 20 60 30 66 S50 72 60 66 S80 60 90 66 S110 72 120 66 V120 H0 Z"/></clipPath>
+  </defs>
+  <circle cx="60" cy="60" r="56" fill="#04303f"/>
+  <g clip-path="url(#c4)">
+    <path d="M0 66 C10 60 20 60 30 66 S50 72 60 66 S80 60 90 66 S110 72 120 66 V120 H0 Z" fill="#16a9c2"/>
+    <path d="M0 66 C10 60 20 60 30 66 S50 72 60 66 S80 60 90 66 S110 72 120 66" fill="none" stroke="#bff4f7" stroke-width="2.4" opacity=".9"/>
+    <path d="M71 25 V67 A15.5 15.5 0 0 1 40 67" clip-path="url(#a5)" fill="none" stroke="#f7fcfc" stroke-width="13" stroke-linecap="round"/>
+    <g clip-path="url(#b6)"><path d="M71 25 V67 A15.5 15.5 0 0 1 40 67" transform="translate(5 2)" fill="none" stroke="#04303f" stroke-width="13" stroke-linecap="round"/></g>
+  </g>
+  </g>
+  <text x="142" y="66" font-family="'Bricolage Grotesque', 'Segoe UI', sans-serif" font-weight="760" font-size="50" letter-spacing="-1" fill="#062530" textLength="222" lengthAdjust="spacingAndGlyphs">Johnny's</text>
+  <text x="144" y="99" font-family="'Bricolage Grotesque', 'Segoe UI', sans-serif" font-weight="500" font-size="22" fill="#0b7f98" textLength="152" lengthAdjust="spacingAndGlyphs">Pool Services</text></svg>
