@@ -102,14 +102,14 @@ form.addEventListener('submit', (e) => {
     if (empty) missing.push(label);
   }
   if (missing.length) {
-    errorEl.textContent = `Add ${missing.join(' and ')} so Johnny knows what the job is.`;
+    errorEl.textContent = `Add ${missing.join(' and ')} so John knows what the job is.`;
     errorEl.hidden = false;
     form.querySelector('[aria-invalid="true"]').focus();
     return;
   }
   errorEl.hidden = true;
 
-  const lines = [`Hi Johnny, this is ${f.name.trim()}.`, `I need help with: ${f.service}.`];
+  const lines = [`Hi John, this is ${f.name.trim()}.`, `I need help with: ${f.service}.`];
   if (f.area.trim()) lines.push(`Suburb: ${f.area.trim()}`);
   if (f.phone.trim()) lines.push(`My number: ${f.phone.trim()}`);
   lines.push('', f.message.trim());
