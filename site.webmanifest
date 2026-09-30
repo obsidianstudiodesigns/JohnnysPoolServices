@@ -1,7 +1,7 @@
 {
   "name": "Johnny's Pool Services",
   "short_name": "Johnny's Pools",
-  "description": "Pool repairs, cleaning, pumps, heating, lighting and decking in Gordon's Bay.",
+  "description": "Pool repairs, cleaning, pumps, heating, lighting and decking across Cape Town and the Western Cape.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#04303f",

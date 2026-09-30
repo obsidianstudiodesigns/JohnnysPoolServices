@@ -63,13 +63,13 @@ def og_image():
     d.text((x, 236 * k), "Johnny's", font=font(96 * k, 'ExtraBold'), fill=WHITE)
     d.text((x + 3 * k, 340 * k), 'Pool Services', font=font(44 * k, 'Medium'), fill=GLINT)
     body = font(28 * k, 'Regular', 24)
-    for i, line in enumerate(['Pool repairs, cleaning, pumps, heating', "and decking in Gordon's Bay"]):
-        d.text((x + 3 * k, (418 + i * 38) * k), line, font=body, fill=(210, 230, 233))
+    for i, line in enumerate(['Pool repairs, cleaning, pumps, heating', 'and decking across Cape Town', 'and the Western Cape']):
+        d.text((x + 3 * k, (404 + i * 36) * k), line, font=body, fill=(210, 230, 233))
     phone = font(30 * k, 'Bold')
     label = 'Call 061 765 8479'
     tw = d.textlength(label, font=phone)
-    d.rounded_rectangle([x, 516 * k, x + tw + 56 * k, 574 * k], radius=16 * k, fill=GLINT)
-    d.text((x + 28 * k, 545 * k), label, font=phone, fill=ABYSS, anchor='lm')
+    d.rounded_rectangle([x, 530 * k, x + tw + 56 * k, 588 * k], radius=16 * k, fill=GLINT)
+    d.text((x + 28 * k, 559 * k), label, font=phone, fill=ABYSS, anchor='lm')
     im.resize((W, H), Image.LANCZOS).save(OUT / 'og-image.jpg', quality=86, optimize=True, progressive=True)
 
 

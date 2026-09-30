@@ -324,6 +324,13 @@ a { color: inherit; }
 .local-inner { position: relative; max-width: 44rem; }
 .local h2 { font-size: var(--t-xl); letter-spacing: -.035em; }
 .local p { margin-top: 1.25rem; font-size: 1.125rem; color: rgba(247, 252, 252, .88); max-width: 34rem; }
+.local-inner { max-width: 62rem; }
+.areas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem 2.5rem; margin-top: 2.25rem; }
+.area-group h3 { font-size: 1.15rem; letter-spacing: -.01em; color: var(--glint); }
+.area-group ul { list-style: none; margin: .6rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: .45rem; }
+.area-group li { padding: .35rem .75rem; border-radius: 999px; background: rgba(4, 48, 63, .38); font-size: .95rem; }
+.local .areas-note { margin-top: 1.75rem; font-size: 1rem; }
+@media (max-width: 760px) { .areas { grid-template-columns: 1fr; } }
 
 /* ---------- contact ---------- */
 .contact {

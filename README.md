@@ -1,6 +1,6 @@
 # Johnny's Pool Services website
 
-A single-page site for Johnny's Pool Services, Gordon's Bay.
+A single-page site for Johnny's Pool Services, serving Cape Town and the Western Cape.
 
 - `index.html` is the website. `logos.html` shows the five logo options.
 - `logos/` holds each logo as an SVG file (icon, plus a logo for light and for dark backgrounds).
