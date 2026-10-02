@@ -30,5 +30,5 @@ The site is plain static files, so any static host works (Netlify, Vercel, GitHu
   `python tools/make-social.py` (needs Pillow) if the logo or photo changes.
 - Structured data (LocalBusiness, services, FAQ) lives in the `application/ld+json` block in `index.html`.
 - `sitemap.xml` lists the pages; submit it in Google Search Console.
-- If the site moves to its own domain, replace `https://obsidianstudiodesigns.github.io/JohnnysPoolServices/`
+- If the site moves to its own domain, replace `https://www.johnnyspoolservices.co.za/`
   everywhere (index.html, privacy.html, terms.html, sitemap.xml, robots.txt).
